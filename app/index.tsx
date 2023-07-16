@@ -1,10 +1,10 @@
 import { FlatList, StyleSheet, Text, View, ActivityIndicator } from "react-native";
-import apodsJson from "../data/apods.json";
-import ApodListItem from "../components/ApodListItem";
+import apodsJson from "@data/apods.json";
+import ApodListItem from "@components/ApodListItem";
 import { useEffect, useState } from "react";
-import FullScreenImage from "../components/FullScreenImage";
-import { Apod } from "../types";
-import { fetchApods } from "../api/apods";
+import FullScreenImage from "@components/FullScreenImage";
+import { Apod } from "@types";
+import { fetchApods } from "@api/apods";
 
 export default function Page() {
   const [apods, setApods] = useState<Apod[]>(null);

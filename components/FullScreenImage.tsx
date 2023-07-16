@@ -15,11 +15,10 @@ const FullScreenImage = ({ url, onClose }: FullScreenImageProps) => {
   return (
     <Pressable onPress={onClose} style={StyleSheet.absoluteFill}>
       <BlurView
-      intensity={60}
+        intensity={60}
         style={{
           justifyContent: "center",
           flex: 1,
-          
         }}
       >
         <Image
