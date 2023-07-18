@@ -29,7 +29,12 @@
       "bundler": "metro" 
     },
     "plugins": [
-      "expo-router"
+      ["expo-router", {
+        "asyncRoutes": {
+            "android": false,
+            "default": "development"
+          }
+      }]
     ],
     "experiments": {
       "tsconfigPaths": true,
